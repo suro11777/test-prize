@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('account_number_bank')->unique();
             $table->unsignedInteger('money')->default(0)->nullable();
-            $table->unsignedBigInteger('already_received_money')->default(0)->nullable();
+            $table->unsignedInteger('when_played')->nullable();
             $table->unsignedBigInteger('count_points')->default(0)->nullable();
             $table->bigInteger('thing_id')->nullable();
             $table->timestamp('email_verified_at')->nullable();

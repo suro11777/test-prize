@@ -16,4 +16,12 @@ class Thing extends Model
         'name',
         'count',
     ];
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function prize()
+    {
+        return $this->belongsTo(Prize::class);
+    }
 }

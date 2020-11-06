@@ -20,3 +20,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/get-prize', 'PrizeController@getPrize')->name('get-prize');
+Route::post('/get-prize', 'UserController@updatePrize')->name('user.update-prize');

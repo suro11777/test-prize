@@ -1,4 +1,4 @@
-<!dOCTYPE html>
+<!DOCTYPE html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +12,9 @@
 
 </head>
 <body>
-<div class="w-100 app" id="app">
+<div class="w-100">
     <!-- Sidebar Holder -->
-    @include('partials.header')
+    @include('partials.heaer')
     <main class="w-100 py-5">
         <div class="container">
             @yield('content')

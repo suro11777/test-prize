@@ -17,4 +17,12 @@ class Prize extends Model
         'name',
         'count',
     ];
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function things()
+    {
+        return $this->hasMany(Thing::class);
+    }
 }
